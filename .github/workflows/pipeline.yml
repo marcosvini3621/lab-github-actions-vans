@@ -29,16 +29,10 @@ jobs:
         run: |
           echo "Step Temp fora: $STEP_TEMP"
 
-      # ==============================
-      # PASSO 3 - VARIÁVEIS PADRÃO
-      # ==============================
       - name: Passo 3: Auditoria com Variáveis Padrão
         run: |
           echo "O usuário $GITHUB_ACTOR disparou este workflow no repositório $GITHUB_REPOSITORY. O sistema operacional do runner é $RUNNER_OS."
 
-      # ==============================
-      # PASSO 4 - GITHUB_ENV
-      # ==============================
       - name: Passo 4: Gerar Código Dinâmico
         run: |
           RANDOM_NUM=$RANDOM
